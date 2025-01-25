@@ -20,7 +20,9 @@ D = C.T # C는 vector이기 때문에 C에 대한 전치행렬 정의가 불가�
 
 E = C.reshape(1,5) # (5,) 형상의 벡터 C를 1 x 5 형상의 matrix로 형변환.
 
-F = E.T # (1 x 5) 형상의 행렬 E의 전치행렬 F =>  (5 x 1) matrix.
+# (1 x 5) 1행 5열 형상의 행렬 E를 transpose => 
+# 전치행렬 F 도출. F = (5 x 1) 5행 1열 형상의 matrix.
+F = E.T 
 
 print("C.shape ==", C.shape, "D.shape ==", D.shape)
 print("E.shape ==", E.shape, "F.shape ==", F.shape)
