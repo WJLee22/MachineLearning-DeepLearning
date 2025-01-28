@@ -26,3 +26,4 @@ print(B)
 # A matrix에 column_add 행렬을 추가한 matrix C 생성. axis값은 1이므로 열을 축으로하여 추가하였으니. 열로 추가됨.
 C = np.concatenate((A, column_add), axis=1)
 print(C)
+print(C.shape) # (2, 4) 형상으로 변경되었음을 확인할 수 있음. 열이 추가된 것!
